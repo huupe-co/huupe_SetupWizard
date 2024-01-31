@@ -70,9 +70,9 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         mIsTaskbarEnabled = LineageSettings.System.getInt(getContentResolver(),
                 LineageSettings.System.ENABLE_TASKBAR, isLargeScreen(this) ? 1 : 0) == 1;
 
-        int deviceKeys = getResources().getInteger(
-                org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
-        boolean hasHomeKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
+        // int deviceKeys = getResources().getInteger(
+        //         org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
+        boolean hasHomeKey = true;// (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
 
         getGlifLayout().setDescriptionText(getString(R.string.navigation_summary));
         setNextText(R.string.next);

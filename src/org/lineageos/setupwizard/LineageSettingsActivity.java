@@ -39,7 +39,7 @@ import android.widget.TextView;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
-import lineageos.hardware.LineageHardwareManager;
+//import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
 public class LineageSettingsActivity extends BaseSetupWizardActivity {
@@ -156,7 +156,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+//        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+//        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+        return false;
     }
 }
